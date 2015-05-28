@@ -1,1 +1,123 @@
-﻿Hello
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+ <head>
+<meta charset="utf-8">
+<title>Quick | вывод различий между файлами при текстовом сравнении</title>
+<meta content="Этот веб-сервис позволит быстро провести сравнительный анализ двух фрагментов текста. Просто вставьте и сравните!" name="description">
+<meta name="keywords" content="online diff, diff, diff tool, quick diff, quickdiff, online diff tool, diff checker" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+
+<link rel="stylesheet" href="css/box.css"><!-- Обертка html-->
+<link rel="stylesheet" href="css/wrap.css"><!--Обертка Diff-->
+
+<!--social-likes--><link rel="stylesheet" href="slikes/social-likes_birman.css">
+ </head>
+ 
+ <body>
+ 
+<script src="js/quick.js"></script><!--Diff-->
+<script type="text/javascript"><!--showHide, показать и скрыть элемент с текстом  -->
+function hideshow() {
+
+  if (document.getElementById('how_to_use').className=='hide')
+      document.getElementById('how_to_use').className='show'
+  else
+        document.getElementById('how_to_use').className='hide';
+}
+
+    function init() {
+        document.getElementById('how_to_use').className='hide';
+}
+</script><!--showHide -->
+
+
+<div id="header1">
+    <div class="logo-quick">
+<a href="http://dokxpi.github.io/Quick/"><span>Q</span><span>U</span><span>I</span><span>C</span><span>H</span><span>!</span>
+<span id="p-logo-quick">Для тех, кто сравнивает фрагменты текстов</span></a>   
+	</div>
+    <div style="clear: both;"></div>
+</div>
+
+<div id="menu">
+<a style="margin-left: 15px;" rel="nofollow" href="http://dokxpi.github.io/cent" target="_blank">Пожертвовать на джинсы</a><a style="margin-left: 15px;" rel="nofollow" alt="Артур Нечипурук" href="http://dokxpi.github.io/about.html">Контакты</a>
+
+</div>
+<hr>
+<div class="diff-quick">
+    <ul>
+        <li><span>HTML</span>
+        </li>
+        <li><span>CSS</span>
+        </li>
+        <li><span>JavaScript</span>
+        </li>
+        <li><span>PHP</span>
+        </li>
+    </ul>
+</div>
+<hr>
+
+
+	
+<div style="clear:both;" id="wrapper"><!--Diff, вывод-->
+		 <form action="#" id="diffForm">
+	 			<div class="clearfix">
+              <p class="links">
+                 <label for="een">Первый текст:</label>
+				 
+                    <textarea placeholder="Просто вставьте ваш первый текст в левом текстовом поле и другой текст в правом окне и нажмите &laquo;сравнить&raquo;, чтобы увидеть результаты." name="een" id="een" cols="30" rows="10"></textarea>
+                  </p>
+				<p class="rechts">
+                  <label for="twee">Второй текст:</label>
+                    <textarea name="twee" id="twee" cols="30" rows="10"></textarea>
+                 </p>
+			</div>
+<p class="button"><input type="submit" class="awesome white" value="Сравнить!" /></p>
+ <span class="help">Введите содержимое двух фрагментов и нажмите на кнопку &laquo;Сравнить!&raquo;</span>
+
+		</form>
+		 <table id="diff">
+			<thead>
+				<tr>
+					<th colspan="3"><span style="font-size: 55%; font-weight: 100;">Результаты сравнения:</span></th>
+				</tr>
+			</thead>
+			<tbody id="res"></tbody>
+		</table>
+    </div><!--diff-->
+
+<!--social-likes--><script src="js/jquery.min.js"></script>
+<!--social-likes--><script src="slikes/social-likes.min.js"></script>	
+	
+<div id="social"><hr>
+<span class="social">Поделиться ссылочкой:</span>
+<!--social-likes-->
+<div class="social-likes">
+	<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+	<div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+	<div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+	<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+	<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+	<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+</div>
+<!--social-likes-->
+<hr style="margin-bottom:4px"></div>
+<div id="foo"><p>Сервис работает до последнего посетителя</p></div>
+
+<!--visit--><script type="text/javascript" src="js/visit.js"></script>
+<div id="visit">
+<script type="text/javascript">
+document.write("Вы посетили эту страницу <font color=\"#808080\"><b>"+num_visits+"</b></font> раз(а).");
+<!--end../ visit--></script>
+</div>
+
+<!--footer-->
+<div id="footer">
+Copyright © <a rel="nofollow" alt="Артур Нечипурук" href="http://dokxpi.github.io/">Arthur Nechipuruk</a> 2015
+</div>
+<!--end../ footer--> 
+
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28778091 = new Ya.Metrika({id:28778091, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/28778091" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->	
+  </body>
+</html>
