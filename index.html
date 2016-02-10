@@ -8,28 +8,24 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
 
 <link rel="stylesheet" href="css/box.css"><!-- Обертка html-->
-<link rel="stylesheet" href="css/wrap.css"><!--Обертка Diff-->
+<link rel="stylesheet" href="css/wrap.css"><!--Обертка diff-->
 
 <!--social-likes--><link rel="stylesheet" href="slikes/social-likes_birman.css">
  </head>
  
  <body>
+<!--Forcing a redirect--><script language="JavaScript"> 
+var host = "dokxpi.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script><!--Github Pages--> 
+
+<!-- framekiller --><script type="text/javascript">
+  if (top.location != location) top.location.href = location.href;
+</script>
+
  
-<script src="js/quick.js"></script><!--Diff-->
-<script type="text/javascript"><!--showHide, показать и скрыть элемент с текстом  -->
-function hideshow() {
-
-  if (document.getElementById('how_to_use').className=='hide')
-      document.getElementById('how_to_use').className='show'
-  else
-        document.getElementById('how_to_use').className='hide';
-}
-
-    function init() {
-        document.getElementById('how_to_use').className='hide';
-}
-</script><!--showHide -->
-
+<script src="js/quick.js"></script><!--diff-->
 
 <div id="header1">
     <div class="logo-quick">
@@ -58,9 +54,7 @@ function hideshow() {
 </div>
 <hr>
 
-
-	
-<div style="clear:both;" id="wrapper"><!--Diff, вывод-->
+<div style="clear:both;" id="wrapper"><!--diff, вывод-->
 		 <form action="#" id="diffForm">
 	 			<div class="clearfix">
               <p class="links">
@@ -100,16 +94,17 @@ function hideshow() {
 	<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
 	<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
 	<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+	<div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="">Pinterest</div>
 </div>
 <!--social-likes-->
 <hr style="margin-bottom:4px"></div>
 <div id="foo"><p>Сервис работает до последнего посетителя</p></div>
 
-<!--visit--><script type="text/javascript" src="js/visit.js"></script>
+<!--visits--><script type="text/javascript" src="js/visits.js"></script>
 <div id="visit">
 <script type="text/javascript">
 document.write("Вы посетили эту страницу <font color=\"#808080\"><b>"+num_visits+"</b></font> раз(а).");
-<!--end../ visit--></script>
+</script><!--end../ visits-->
 </div>
 
 <!--footer-->
